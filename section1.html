@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cookies</title>
+
+    <!-- Including the main.css file for styling -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Including the Font Awesome CSS library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Links to different sections -->
+        <a href="index.html">Game Overview</a>
+
+        <!-- Active link pointing to the section1.html page -->
+        <a class="active" href="section1.html">Cookies</a>
+
+        <a href="section2.html">Story</a>
+        <a href="section3.html">Strategy</a>
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="main">
+        <br>
+        <section class="main-container">
+            <br>
+            <h3>Meet the Cookies!</h3>
+            <br>
+            <h1>EVERYONE'S FAVORITE TINY HEROES</h1>
+            <div class="moving-image">
+                <img class="pv-moving2" src="img/pv_moving2.webp" alt="Animated WebP PV Image">
+            </div>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                <button class="btn" onclick="filterSelection('ancient')"> Ancient</button>
+                <button class="btn" onclick="filterSelection('legendary')"> Legends</button>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="column ancient">
+                  <div class="card">
+                    <img src="img/purevanilla.webp" alt="Ancient" style="width:100%">
+                    <div class="container">
+                      <h2>Pure Vanilla Cookie</h2>
+                      <p class="title">Healing</p>
+                      <p>A kind-hearted and wise healer, Pure Vanilla Cookie uses his ancient staff to restore allies’ health and shield them from harm</p>
+                      <p>CV. Yuri Lowenthal</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column ancient">
+                  <div class="card">
+                    <img src="img/hollyberry.webp" alt="Ancient" style="width:100%">
+                    <div class="container">
+                      <h2>Hollyberry Cookie</h2>
+                      <p class="title">Defense</p>
+                      <p>A fearless warrior and devoted protector, Hollyberry Cookie leads with strength and unwavering loyalty.</p>
+                      <p>CV. Elizabeth Maxwell</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column ancient">
+                  <div class="card">
+                    <img src="img/darkcacao.webp" alt="Ancient" style="width:100%">
+                    <div class="container">
+                      <h2>Dark Cacao Cookie</h2>
+                      <p class="title">Charge</p>
+                      <p>A solemn and battle-hardened king, Dark Cacao Cookie wields his powerful sword with unmatched strength.</p>
+                      <p>CV. Patricl Seitz</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column ancient">
+                    <div class="card">
+                      <img src="img/goldencheese.webp" alt="Ancient" style="width:100%">
+                      <div class="container">
+                        <h2>Golden Cheese Cookie</h2>
+                        <p class="title">Ranged</p>
+                        <p>A dazzling and cunning ruler, Golden Cheese Cookie thrives in luxury and wealth, commanding a realm of riches.</p>
+                        <p>CV. Pilar Uribe</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="column ancient">
+                    <div class="card">
+                      <img src="img/whitelily.webp" alt="Ancient" style="width:100%">
+                      <div class="container">
+                        <h2>White Lily Cookie</h2>
+                        <p class="title">Bomber</p>
+                        <p>Mysterious and deeply inquisitive, White Lily Cookie possesses an insatiable thirst for knowledge and discovery.</p>
+                        <p>CV. Erica Mendez</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="column legendary">
+                    <div class="card">
+                      <img src="img/moonlight.webp" alt="Legendary" style="width:100%">
+                      <div class="container">
+                        <h2>Moonlight Cookie</h2>
+                        <p class="title">Magic</p>
+                        <p>A graceful guardian of dreams, Moonlight Cookie watches over the night sky from the city of wizards.</p>
+                        <p>CV. G.K. Bowes</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column legendary">
+                    <div class="card">
+                      <img src="img/seafairy.webp" alt="Legendary" style="width:100%">
+                      <div class="container">
+                        <h2>Sea Fairy Cookie</h2>
+                        <p class="title">Bomber</p>
+                        <p>A mystical guardian of the ocean, Sea Fairy Cookie commands powerful waves to strike down her foes. Her serene yet sorrowful presence hides a deep longing for the past.</p>
+                        <p>CV. Laura Post</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column legendary">
+                    <div class="card">
+                      <img src="img/frostqueen.webp" alt="Legendary" style="width:100%">
+                      <div class="container">
+                        <h2>Frost Queen Cookie</h2>
+                        <p class="title">Magic</p>
+                        <p>As the embodiment of winter’s frost, Frost Queen Cookie freezes enemies in their tracks with her chilling magic. She rules the frozen realm with an icy grace, untouched by time.</p>
+                        <p>CV. Cristina Vee</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column legendary">
+                    <div class="card">
+                      <img src="img/blackpearl.webp" alt="Legendary" style="width:100%">
+                      <div class="container">
+                        <h2>Black Pearl Cookie</h2>
+                        <p class="title">Ambush</p>
+                        <p>Emerging from the depths of the abyss, Black Pearl Cookie engulfs her enemies in relentless tidal fury. She is both a feared legend and a mysterious force lurking in the darkest waters.</p>
+                        <p>CV. Erica Mendez</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </section>
+        <br>
+        <br>
+    </div>
+    
+    <!-- Including the main.js file for JavaScript functionality -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+/* Style for page content */
+.main {
+  padding: 14px;
+  font-size: 22px;
+}
+
+/* Background */
+body {
+    background-image: url("../img/crk_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:rgba(0, 0, 0, 0.8);
+  font-family: "Georgia", serif;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  transition: background-color 0.5s ease, color 0.5s ease, border-radius 0.5s ease;
+}
+
+.topnav a:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #eed49b;
+  color: black;
+  border-radius: 10px;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #e4ad38;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Hide the icon that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* CRK Logo */
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 30%;
+  max-width: 40%;
+}
+
+.ancient-logo {
+  display: block;
+  margin: 20px auto;
+  width: 18%;
+  max-width: 50%;
+}
+
+/* Images */
+.pv-moving {
+  display: block;
+  margin: 20px auto;
+  width: auto;
+  max-width: 60%;
+}
+
+.sf-moving {
+  display: block;
+  margin: 20px auto;
+  width: auto;
+  max-width: 50%;
+}
+
+.ml-moving {
+  display: block;
+  margin: 20px auto;
+  width: auto;
+  max-width: 50%;
+}
+
+.pv-moving2 {
+  display: block;
+  margin: 20px auto;
+  width: 20%;
+  max-width: 50%;
+}
+
+.wizard-moving {
+  display: block;
+  margin: 20px auto;
+  width: 20%;
+  max-width: 50%;
+}
+
+/* SLIDESHOW */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 850px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-family: "Georgia", serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*COOKIES CARD*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.column {
+  display: none;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  background-color: #6d5d53;
+  color: #dbbf91;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  outline: 3px solid #dbbf91;
+  outline-offset: -10px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #c27d44;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+#myBtnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  border: 2px solid #dbbf91;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #594d46;
+  color: #dbbf91;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #dbbf91;
+  color: #594d46;
+}
+
+.btn.active {
+  background-color: #463b30;
+  color: #dbbf91;
+}
+
+
+/* Game Overview Page */
+.main-container h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-container h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-container a {
+  color: #c27d44;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-container a:hover {
+  color: #c48e63;
+  text-decoration: underline;
+}
+
+.main-container {
+  background-color: #594d46;
+  color: #dbbf91;
+  font-family: "Georgia", serif;
+  padding: 40px;
+  font-size: 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: 20px auto;
+  outline: 3px solid #dbbf91;
+  outline-offset: -15px;
+}
+
+
+/* When the screen is less than 800 pixels wide */
+@media screen and (max-width: 800px) {
+  /* Hide all links, except for the selected tab */
+  .topnav a:not(.active) {
+    display: none;
+  }
+
+  /* Show the icon that should open and close the topnav */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* When the screen is less than 800 pixels wide, if the user clicks on the icon */
+/* the "responsive" class attribute will be added to the topnav by the JavaScript code */
+/* This media query sets the style for the unfolded topnav */
+/* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Cookie Cards */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Adjust width for larger screens */
+@media screen and (min-width: 768px) {
+  .column {
+    width: 48%;
+  }
+}
